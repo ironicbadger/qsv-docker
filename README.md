@@ -6,6 +6,8 @@ This container assumes your host system has a working QuickSync Video implementa
 
 ## Usage
 
+Build the image with `docker build -t qsv-transcoder .`.
+
 ### 1. Test with Sample Video
 
 Download and test with a sample video file:
