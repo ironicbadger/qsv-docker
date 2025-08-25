@@ -23,7 +23,7 @@ docker run --rm \
   qsv-transcoder \
   -hwaccel qsv -c:v h264_qsv \
   -i /input/test_video.mp4 \
-  -c:v h264_qsv -preset balanced -global_quality 25 \
+  -c:v h264_qsv -preset medium -global_quality 25 \
   -f null -
 ```
 
@@ -43,7 +43,7 @@ docker run --rm \
   qsv-transcoder \
   -hwaccel qsv -c:v h264_qsv \
   -i /input/test_video.mp4 \
-  -c:v h264_qsv -preset balanced -global_quality 25 \
+  -c:v h264_qsv -preset medium -global_quality 25 \
   /output/encoded_video.mp4
 ```
 
