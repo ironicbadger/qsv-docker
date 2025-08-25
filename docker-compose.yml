@@ -1,0 +1,13 @@
+services:
+  qsv:
+    image: qsv-transcoder
+    build:
+      context: .
+      dockerfile: Dockerfile
+    devices:
+      - /dev/dri:/dev/dri
+    volumes:
+      - ./input:/input:ro
+      - ./output:/output
+    environment:
+      - LIBVA_DRIVER_NAME=iHD
