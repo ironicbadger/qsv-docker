@@ -6,15 +6,7 @@ This container assumes your host system has a working QuickSync Video implementa
 
 ## Usage
 
-### 1. Verify QSV capabilities
-
-* Verify QuickSync capablities of your system with:
-
-```bash
-docker run --rm --device=/dev/dri:/dev/dri qsv-transcoder --check
-```
-
-### 2. Test with Sample Video
+### 1. Test with Sample Video
 
 Download and test with a sample video file:
 
@@ -37,7 +29,7 @@ You may wish to monitor progress using `intel_gpu_top` to ensure the hardware en
 
 ![intel_gpu_top example](intel_gpu_top.png)
 
-### 3. Use it with your own files
+### 2. Use it with your own files
 
 To use the container with your own files, replaced `-f null -` thus:
 
